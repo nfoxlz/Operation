@@ -26,3 +26,5 @@ while (card.CheckDone(0) == 0)
 DMCBase.BoardClose();
 ```
 注意：只有全部使用完后才能关闭。
+
+**作者邮箱：** 4043171@qq.com
