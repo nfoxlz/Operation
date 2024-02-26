@@ -91,6 +91,8 @@ namespace Operation.DMC
         /// <returns>错误代码</returns>
         public static short BoardReset() => LTDMC.dmc_board_reset();
 
+        public static short GetCardLibVersion(ref uint LibVer) => LTDMC.dmc_get_card_lib_version(ref LibVer);
+
         public short GetCardSoftVersion(ref uint firmID, ref uint subFirmID) => LTDMC.dmc_get_card_soft_version(CardNo, ref firmID, ref subFirmID);
 
         public short CoolReset() => LTDMC.dmc_cool_reset(CardNo);
